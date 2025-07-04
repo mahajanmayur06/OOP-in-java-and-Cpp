@@ -21,7 +21,7 @@ public:
 
 int main() {
     Car car1("Red", 100);
-    Car car2("Blue", 120);
+    Car car2("Blue", 100);
 
     car1.displayInfo();
     car2.displayInfo();
