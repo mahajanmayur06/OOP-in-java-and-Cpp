@@ -1,29 +1,23 @@
-package javaOOPS;
-
-class Car {
-    // Instance variables
-    String color;
-    int speed;
-
-    // Constructor
-    Car(String color, int speed) {
-        this.color = color;
-        this.speed = speed;
-    }
-
-    // Method to display car info
-    void displayInfo() {
-        System.out.println("Color: " + color + ", Speed: " + speed + " km/h");
-    }
-}
-
 public class Main {
-    public static void main(String[] args) {
-        // reference variables representing objects, with instance variables
-        Car car1 = new Car("Red", 100);
-        Car car2 = new Car("Blue", 120);
+    {
+        System.out.println("This is the main class initializer block");
+    }
+    Main () {
+        this(16);
+        System.out.println("This is the main class constructor");
+    }
 
-        car1.displayInfo();
-        car2.displayInfo();
+    Main (int a) {
+        this(20, "Java");
+        System.out.println("This is the main class constructor with parameter: " + a);
+    }
+
+    Main (int a, String b) {
+        // this();
+        System.out.println("This is the main class constructor with parameters: " + a + " and " + b);
+    }
+    public static void main(String[] args) {
+        Main obj = new Main();
+        
     }
 }
