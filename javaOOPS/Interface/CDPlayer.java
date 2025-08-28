@@ -1,3 +1,3 @@
-public class CDPlayer {
+public class CDPlayer extends  {
     
 }
